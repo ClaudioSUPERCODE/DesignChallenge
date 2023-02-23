@@ -107,14 +107,21 @@
         <section class="subscribe">
             <h4>Do you like this challenge?</h4>
             <p>Subscribe to be the first to hear about updates,tips and recommendations!</p>
-            <form action="">
-                <input type="email" name="" id="" placeholder="Write your email here" class="email">
-                <input type="button" value="Subscribe" class="button">
+            <form action="" onsubmit="return false">
+                <input type="email" name="" id="email" placeholder="Enter your email here" class="email">
+                <input type="submit" value="Subscribe" class="btn" onclick="openPopup()">
+                <div class="popup" id="popup">
+                    <img src="./assets/pics/confirmed-logo.png" alt="kiss emoji">
+                    <h2>YOUR EMAIL HAS BEEN CONFIRMED!</h2>
+                    <h2>THANKS FOR SUBSCRIBING</h2>
+                    <button type="button" onclick="closePopup()">CLOSE</button>
+                </div>
             </form>
         </section>
         <footer>
-            <h5>Created with Love by a Webdesigner <img src="./assets/pics/love.png" alt="heart"></h5>
+            <h5>Created with Love by a Webdesigner <img src="./assets/pics/pixelheart.gif" alt="heart"></h5>
         </footer>
     </main>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

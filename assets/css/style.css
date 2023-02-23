@@ -423,6 +423,7 @@ main .lets-go-4 .letsgo-text p {
 /* -------------SUBSCRIBE------------- */
 
 main .subscribe {
+    position: relative;
     text-align: center;
 }
 
@@ -455,7 +456,7 @@ main .subscribe form .email {
     border-radius: 5px;
 }
 
-main .subscribe form .button {
+main .subscribe form .btn {
     padding: 15px 70px;
     color: white;
     background-color: #ff3571;
@@ -463,7 +464,21 @@ main .subscribe form .button {
     border-radius: 5px;
     font-size: 2rem;
     margin-top: 50px;
+    cursor: pointer;
+    width: 300px;
 }
+
+main .subscribe form .btn:hover {
+    padding: 15px 70px;
+    color: white;
+    background: linear-gradient(30deg, rgba(82,48,255,1) 26%, rgba(255,53,113,1) 86%);
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
 
 /* --------------FOOTER------------- */
 
@@ -481,6 +496,182 @@ footer h5 {
 }
 
 footer h5 img {
-    width: 25px;
-    margin-left: 15px;
+    width: 50px;
+    margin-left: 5px;
+}
+
+/* ===========POP-UP============ */
+
+.popup {
+    width: 500px;
+    background-image: url("../pics/purplegalaxy.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    background-color: #ff3571;
+    visibility: visible;
+    /* top: 50%; */
+}
+
+.popup h2 {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.61);
+    margin: 0;
+}
+
+.popup img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50px;
+}
+
+.popup button {
+    background-color: #ff3571;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    
+}
+
+/* =============MEDIA QUERYS============= */
+
+@media only screen and (max-width: 600px) {
+
+header {
+    background-size: 80%;
+    height: 120vh;
+}
+
+header nav {
+    background-color: rgba(255, 255, 255, 0.266);
+    border-radius: 50px;
+    height:80px;
+}
+
+header nav a img {
+    padding: 20px;
+}
+
+header .intro {
+    flex-direction: column-reverse;
+}
+
+header .intro .intro-pic img {
+    margin-left: 20%;
+}
+
+header .intro .intro-text h2 {
+    font-size: 5rem;
+    width: 100%;
+    padding-left: 50px;
+}
+
+header .intro .intro-text h3 {
+    width: 100%;
+    padding-left: 50px;
+}
+
+header .intro .intro-text h4 {
+    width: 100%;
+    padding-left: 50px;margin-top: 50px;
+    font-size: 2rem;
+}
+
+header .design-examples {
+    height: 60vh;
+}
+
+main article {
+    height: 50vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+main article h3 {
+    width: 70%;
+    text-align: center;
+    margin-top: 90vh;
+    font-size: 5rem;
+}
+
+main article p {
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+main h2 {
+    width: 80%;
+    text-align: center;
+    margin-top: 70vh;
+    margin-bottom: 50px;
+    font-size: 5rem;
+}
+
+main .tiles-row-1 {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .tiles-row-1 div {
+    width: 75%;
+}
+
+main .tiles-row-2 {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .tiles-row-2 div {
+    width: 75%;
+}
+
+main .tiles-row-1 div h3 {
+    margin-top: 50px;
+}
+
+main .tiles-row-2 div h3 {
+    margin-top: 50px;
+}
+
+main .lets-go h3 {
+    font-size: 5rem;
+}
+
+main .lets-go p {
+    width: 70%;
+}
+
+main .subscribe form .email {
+    width: 80%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer h5 {
+    margin-left: 25px;
+}
+
 }
