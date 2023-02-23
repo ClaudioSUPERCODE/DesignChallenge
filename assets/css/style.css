@@ -1,0 +1,486 @@
+@font-face {
+    font-family: "Roboto-Regular.ttf";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Black.ttf";
+    src: url("../fonts/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Bold.ttf";
+    src: url("../fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Light.ttf";
+    src: url("../fonts/Roboto-Light.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: "Roboto-Regular.ttf";
+}
+
+/* =============COLORS============== */
+
+/* Farben: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000 */
+
+/* =============HEADER============== */
+
+header {
+    height: 170vh;
+    background-image: url("../pics/ilustracion1.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+header nav {
+    height: 115px;
+    display: flex;
+    align-items: center;
+}
+
+header nav a img{
+    width: 40px;
+    padding: 38px;
+    position: fixed;
+    top: 0;
+}
+
+header nav div {
+    margin-left: 90px;
+}
+
+header nav div h1 {
+    font-family: "Roboto-Black.ttf";
+    font-size: 2.5rem;
+}
+
+header nav div h2 {
+    font-size: 1.3rem;
+}
+
+header .intro {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+}
+
+header .intro .intro-text {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+header .intro .intro-text h2 {
+    font-family: "Roboto-Black.ttf";
+    font-size: 6rem;
+    width: 80%;
+}
+
+header .intro .intro-text h3 {
+    font-family: "Roboto-Light.ttf";
+    margin-top: 30px;
+    font-size: 2rem;
+    width: 80%;
+}
+
+header .intro .intro-text h4 {
+    font-family: "Roboto-Black.ttf";
+    margin-top: 100px;
+    font-size: 1.2rem;
+    width: 80%;
+    color: #ff3571;
+}
+
+header .intro .intro-text img {
+    width: 30px;
+}
+
+header .intro .intro-pic img {
+    width: 70%;
+    margin-left: 17%;
+    margin-top: 40;
+}
+
+header .design-examples {
+    height: 75vh;
+    background-image: url("../pics/images.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* =============MAIN============== */
+
+/* ---------article & h2---------- */
+
+main article {
+    height: 100vh;
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+}
+
+main article h3 {
+    font-family: "Roboto-Black.ttf";
+    font-size: 6rem;
+    width: 30%;
+    margin-top: 35vh;
+}
+
+main article h3 img {
+    width: 50px;
+}
+
+main article p {
+    font-family: "Roboto-Light.ttf";
+    font-size: 2rem;
+    width: 48%;
+    line-height: 2;
+    margin-top: 35vh;
+}
+
+main h2 {
+    font-family: "Roboto-Black.ttf";
+    font-size: 6rem;
+    width: 50%;
+    margin-left: 9%;
+    margin-bottom: 25vh;
+}
+
+/* -------------tiles section---------- */
+
+main .tiles-row-1 {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 70px 5vw;
+}
+
+main .tiles-row-1 div {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+main .tiles-row-1 div img {
+    width: 40px;
+    margin-right: 25px;
+}
+
+main .tiles-row-1 div h3 {
+    font-family: "Roboto-Black.ttf";
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+main .tiles-row-1 div p {
+    margin-top: 5px;
+    padding-left: 65px;
+    font-size: 2rem;
+    line-height: 2;
+}
+
+main .tiles-row-2 {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 70px 5vw;
+}
+
+main .tiles-row-2 div {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+main .tiles-row-2 div img {
+    width: 40px;
+    margin-right: 25px;
+}
+
+main .tiles-row-2 div h3 {
+    font-family: "Roboto-Black.ttf";
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+main .tiles-row-2 div p {
+    margin-top: 5px;
+    padding-left: 65px;
+    font-size: 2rem;
+    line-height: 2;
+}
+
+/* -------------LETS GO------------- */
+
+main .lets-go {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main .lets-go h3 {
+    font-family: "Roboto-Black.ttf";
+    font-size: 6rem;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+main .lets-go p {
+    font-family: "Roboto-Light.ttf";
+    font-size: 2rem;
+    line-height: 2;
+    width: 50%;
+}
+
+/* --------------LETS GO 1------------- */
+
+main .lets-go-1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+main .lets-go-1 .letsgo-pic {
+    width: 40%;
+}
+
+main .lets-go-1 .letsgo-pic img {
+    width: 95%;
+}
+
+main .lets-go-1 .letsgo-text {
+    width: 40%;
+}
+
+main .lets-go-1 .letsgo-text h4 {
+    font-family: "Roboto-Black.ttf";
+    font-size: 8rem;
+    color: #dddddd;
+    padding-bottom: 50px;
+}
+
+main .lets-go-1 .letsgo-text h5 {
+    font-family: "Roboto-Black.ttf";
+    font-size: 2rem;
+    padding: 20px 0;
+}
+
+main .lets-go-1 .letsgo-text p {
+    font-size: 2rem;
+    line-height: 2;
+    width: 95%;
+}
+
+/* -------------LETS GO 2---------------- */
+
+main .lets-go-2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+main .lets-go-2 .letsgo-pic {
+    width: 40%;
+}
+
+main .lets-go-2 .letsgo-pic img {
+    width: 95%;
+}
+
+main .lets-go-2 .letsgo-text {
+    width: 40%;
+    margin-left: 50px;
+}
+
+main .lets-go-2 .letsgo-text h4 {
+    font-family: "Roboto-Black.ttf";
+    font-size: 8rem;
+    color: #dddddd;
+    padding-bottom: 50px;
+}
+
+main .lets-go-2 .letsgo-text h5 {
+    font-family: "Roboto-Black.ttf";
+    font-size: 2rem;
+    padding: 20px 0;
+}
+
+main .lets-go-2 .letsgo-text p {
+    font-size: 2rem;
+    line-height: 2;
+    width: 95%;
+}
+
+/* ---------------LETS GO 3---------------- */
+
+main .lets-go-3 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+main .lets-go-3 .letsgo-pic {
+    width: 40%;
+}
+
+main .lets-go-3 .letsgo-pic img {
+    width: 95%;
+}
+
+main .lets-go-3 .letsgo-text {
+    width: 40%;
+}
+
+main .lets-go-3 .letsgo-text h4 {
+    font-family: "Roboto-Black.ttf";
+    font-size: 8rem;
+    color: #dddddd;
+    padding-bottom: 50px;
+}
+
+main .lets-go-3 .letsgo-text h5 {
+    font-family: "Roboto-Black.ttf";
+    font-size: 2rem;
+    padding: 20px 0;
+}
+
+main .lets-go-3 .letsgo-text p {
+    font-size: 2rem;
+    line-height: 2;
+    width: 95%;
+}
+
+/* ----------------LETS GO 4------------------ */
+
+main .lets-go-4 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+main .lets-go-4 .letsgo-pic {
+    width: 40%;
+}
+
+main .lets-go-4 .letsgo-pic img {
+    width: 95%;
+}
+
+main .lets-go-4 .letsgo-text {
+    width: 40%;
+    margin-left: 50px;
+}
+
+main .lets-go-4 .letsgo-text h4 {
+    font-family: "Roboto-Black.ttf";
+    font-size: 8rem;
+    color: #dddddd;
+    padding-bottom: 50px;
+}
+
+main .lets-go-4 .letsgo-text h5 {
+    font-family: "Roboto-Black.ttf";
+    font-size: 2rem;
+    padding: 20px 0;
+}
+
+main .lets-go-4 .letsgo-text p {
+    font-size: 2rem;
+    line-height: 2;
+    width: 95%;
+}
+
+/* -------------SUBSCRIBE------------- */
+
+main .subscribe {
+    text-align: center;
+}
+
+main .subscribe h4 {
+    font-family: "Roboto-Black.ttf";
+    font-size: 6rem;
+    padding: 50px;
+}
+
+main .subscribe p {
+    font-family: "Roboto-Light.ttf";
+    font-size: 2rem;
+    line-height: 2;
+}
+
+main .subscribe form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+main .subscribe form .email {
+    text-align: center;
+    width: 30%;
+    padding: 20px 0;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+
+main .subscribe form .button {
+    padding: 15px 70px;
+    color: white;
+    background-color: #ff3571;
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+/* --------------FOOTER------------- */
+
+footer {
+    margin-top: 10vh;
+    height: 6vh;
+}
+
+footer h5 {
+    font-family: "Roboto-Light.ttf";
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+footer h5 img {
+    width: 25px;
+    margin-left: 15px;
+}
